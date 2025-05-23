@@ -58,7 +58,7 @@ The application will be available at `http://localhost:5173`
 ## Preview on Replit
 
 
-1. Go to **[Replit Omniston Swap App](https://replit.com/@stonfi/omniston-swap-app?embed=true)**
+1. Go to **[Replit Omniston Swap App](https://replit.com/@stonfi/stonfi-liquidity-app?embed=true)**
 2. Click Fork (top-right corner) to create your own copy of the project.
 3. Wait for the environment to install dependencies.
 4. Click the Run button to start the dev server.
