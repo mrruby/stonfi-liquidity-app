@@ -13,6 +13,7 @@
     "@ston-fi/api": "^0.22.0",
     "@ston-fi/sdk": "^2.4.0",
     "@tailwindcss/vite": "^4.1.7",
+    "@ton/ton": "^15.2.1",
     "@tonconnect/ui-react": "^2.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
