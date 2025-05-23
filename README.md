@@ -1,54 +1,71 @@
-# React + TypeScript + Vite
+# STON.fi Liquidity App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React-based web application for providing liquidity on STON.fi, built with TypeScript and Vite. It follows the structure and best practices outlined in the Omniston guide.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Guide Overview](#guide-overview)
+- [Project Structure](#project-structure)
+- [Running Locally](#running-locally)
+- [Preview on Replit](#preview-on-replit)
 
-## Expanding the ESLint configuration
+## Guide Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This application demonstrates how to build a liquidity provision interface for STON.fi using React, TypeScript, and Vite. It includes:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Type-safe development with TypeScript
+- Modern React patterns and hooks
+- Efficient build process with Vite
+- ESLint configuration for code quality
+- React-specific linting rules
+
+## Project Structure
+
+```
+stonfi-liquidity-app/
+├── src/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── public/
+│   └── tonconnect-manifest.json
+├── index.html
+├── vite.config.ts
+├── tsconfig.json
+└── package.json
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Running Locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+1. Clone the repository:
+```bash
+git clone https://github.com/mrruby/stonfi-liquidity-app.git
+cd stonfi-liquidity-app
 ```
+
+2. Install dependencies:
+```bash
+pnpm install
+```
+
+3. Start the development server:
+```bash
+pnpm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## Preview on Replit
+
+
+1. Go to **[Replit Omniston Swap App](https://replit.com/@stonfi/omniston-swap-app?embed=true)**
+2. Click Fork (top-right corner) to create your own copy of the project.
+3. Wait for the environment to install dependencies.
+4. Click the Run button to start the dev server.
+5. Use the Replit preview to interact with the swap UI.
+
+You can then modify any files (like App.jsx) directly in Replit and immediately see the changes reflected in the preview.
+
+---
+
+Happy building on TON and STON.fi!
